@@ -1,6 +1,6 @@
 # MiXBLUP Examples
 
-Documentation and examples for MiXBLUP Software using Mrode's 4th Edition. 
+Documentation and examples for [MiXBLUP](https://www.mixblup.eu/) Software using Mrode's 4th Edition. 
 
 Please get a copy of Mrode's book, here is link to <a href="https://www.amazon.com/Linear-Models-Prediction-Genetic-Animals/dp/1800620489/ref=sr_1_1?crid=33JGPUS52K1UE&dib=eyJ2IjoiMSJ9.cgsmL0Fr1_dsmNh9rPNjhw.vmcwro4QogCZwkZPHJzZpKjGIsw_HCn-FWgd3NrPh_M&dib_tag=se&keywords=mrode+4th+edition+linear+models&qid=1723557770&sprefix=mrode+4th+edition+linear+models%2Caps%2C79&sr=8-1" target="_blank">Amazon</a>
 
