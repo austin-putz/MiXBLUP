@@ -11,7 +11,7 @@ Please get a copy of Mrode's book, here is link to <a href="https://www.amazon.c
 * One of the only softwares in the world that can handle large-scale genetic evaluations (other is <a href="https://nce.ads.uga.edu/wiki/doku.php?id=start" target="_blank">BLUPF90</a>
 * Allows pedigree (no genotypes), GBLUP, single-step GBLUP (**ssGBLUP**), and single-step ridge-regresssion (ssRRBLUP) based on Rohan Fernando's work
 
-The have a lengthy manual but the documentation was a little difficult to understand and I think examples are far better to learn software with than written descriptions. 
+The documentation is pretty lengthy but I thought examples may be better. 
 
 **Files Needed at Minimum:**
 
