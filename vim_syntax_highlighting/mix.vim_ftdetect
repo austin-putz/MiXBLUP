@@ -1,0 +1,1 @@
+au BufRead,BufNewFile *.mix set filetype=mix
