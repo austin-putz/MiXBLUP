@@ -1,0 +1,50 @@
+ 
+          Total Allocated Memory During the Execution of MiXBLUP
+ 
+ At the Point of Execution                                 Megabytes     Total
+ 
+MiX_input:      start                                           1           1
+MiX_dir:        parameters to hold model information            0           1
+MiX_dir:        - work arrays                                   0           1
+MiX_fp1:        base records of effects                         0           1
+MiX_fp1:        record-tree for animals                         0           1
+recdat:         data structure tables                           0           1
+recdat:         work tables                                     0           1
+recdat:         e_lev record-tree                               0           1
+recdat:          - work tables                                  0           1
+MiX_inp:        vector to hold effect id's                      0           1
+MiX_inp:        - vector to hold effect id's                    0           1
+MiX_inp:        arrays for parameters & model inf.              1           2
+MiX_inp:        vector with num. of poss. ele. in xpx           0           2
+------------------------------------------------------
+ File size and RAM usage estimates of temporary files:
+ total size of temporary files ...........     0.2 kilobytes             61
+ memory allocated for all i/o-buffers ....    72.0 kilobytes          18432
+ i/o-buffer for pedigree .................     8.0 kilobytes           2048
+ i/o-buffer for inbreeding ...............     8.0 kilobytes           2048
+ i/o-buffer for record data ..............    16.0 kilobytes           4096
+ i/o-buffer for preconditioning matrix M .    40.0 kilobytes          10240
+------------------------------------------------------
+ Maximum number of records in a dump                 :              5
+ Number of real numbers per record in buffer52       :              1
+inibuffer:      i/o-buffers 4, 4i, 51 & 52:                     0           2
+inibuffer:      work table for precond.                         0           2
+inibuffer:      across block vector.                            0           2
+inibuffer:      book                                            0           2
+inibuffer:      usedpage                                        0           2
+inibuffer:      first page in book                              0           2
+mkitdata:       memory to hold one record                       0           2
+mkitdata:       cline                                           0           2
+mkitdata:       vector to hold block XpX.                       0           2
+mkitdata:       vector to hold BXpX.                            0           2
+mkitdata:       vector to hold diagonal of animals              0           2
+precond:        next page in book                               0           2
+precond:        next page in book                               0           2
+precond:        next page in book                               0           2
+precond:        next page in book                               0           2
+precond:        next page in book                               0           2
+mkitdata:       - i/o-buffers 4, 51 & 52:                       0           2
+inibuffer:      - work table for precond.                       0           2
+mkitdata:        io-buffer 6                                    0           2
+ 
+ ---end of MiX_input---

@@ -1,0 +1,189 @@
+  ___________________________________________________________________________ 
+ |                                                                           |
+ |                           M   i   X   9   9   s                           |
+ |                            k e r n e l   f o r                            |
+ |                         M   i   X   B   L   U   P                         |
+ |                                                                           |
+ |    release    I/2022 A version 22.0228 (Apr 13 2022 14:07 git f332fd7)    |
+ |                                                                           |
+ |          M I X E D   M O D E L   E Q U A T I O N S   S O L V E R          |
+ |                                                                           |
+ |            General Program for Large Mixed Model Problems with            |
+ |                 Preconditioned Conjugate Gradient Method                  |
+ |                                                                           |
+ |   Natural Resources Institute Finland (Luke)     Copyright(C) 1998-2022   |
+ |   FI-31600 Jokioinen, Finland                    All rights reserved      |
+ |   http://www.luke.fi/mix99                       mix99@luke.fi            |
+ |___________________________________________________________________________|
+ |                                                                           |
+ |   When using this program you agree with the following terms and          |
+ |   conditions. User is responsible for preparing correctly formatted       |
+ |   data for this program and is responsible for correctness of data        |
+ |   information. You are not allowed to distribute this program nor         |
+ |   modified versions of it neither under the same nor under a different    |
+ |   name. Any decisions based on information given by using this software   |
+ |   are made at your own responsibility and risk. Only limited technical    |
+ |   support can be provided. For commercial purposes, valid MiX99 software  |
+ |   contract is required. Use of MiX99 software should be credited with     |
+ |   appropriate reference:                                                  |
+ |                                                                           |
+ |   MiX99 Development Team (2022). MiX99: A software package for solving    |
+ |      large mixed model equations. Release I/2022. Natural Resources       |
+ |      Institute Finland (Luke). Jokioinen, Finland.                        |
+ |      URL: http://www.luke.fi/mix99                                        |
+ |___________________________________________________________________________|
+ 
+ 
+ 
+  ___________________________________________________________________________ 
+ |                                                                           |
+ | Chapter 3.1 Example                                                       |
+ |___________________________________________________________________________|
+ 
+    Preconditioner information:
+ 
+    XpX : b  across block fixed
+    WPW : F  within block effects
+    T= diagonal, F= block diagonal
+ 
+    Number of traits in the model :           1
+    Size of genetic (co)var matrix:           1
+ 
+    Memory requirements? (H=high, M=medium, L=low)
+   >> h YES MES
+    Checking of release information in files: Yes
+ 
+ 
+    Memory requirements set to high.           
+ 
+    Give on the same line:
+      - maximum number of iterations
+      - stopping criterion value
+      - stopping criterion name (A, R, M, D)
+      - letter "F" to force use of non default values
+   >> 1000 1.0E-5 d f
+ 
+    Maximum Number of PCG Iterations ....................      10
+    Stopping Criterion ............................. CD <  0.1000E-04
+ 
+    Calculate residuals? (Y/N) 
+   >> n
+    No.
+ 
+    Validation? (N=no; P=prediction; S=sum of estimates; Y=YD; D=DYD;
+                 I=individual daughter deviations)
+   >> n
+    No prediction.
+ 
+ 
+ 
+    ___________________ Parameters ___________________________________________
+ 
+ 
+    Memory requirements                      : high.           
+ 
+    Number of trait patterns                 :           1
+    Number of residual (co)variance matrices :           1
+    Number of inv(R) matrices                :           1
+ 
+    Number of CPU threads by MKL             : 10
+    Number of CPU threads by OpenMP          : 10
+    Checking of release information in files : yes
+ 
+    Maximum Number of PCG Iterations ....................      10
+    PCG Stopping Criterion ......................... CD <  0.1000E-04
+ 
+    Calculate residuals : No.
+ 
+  ___________________________________________________________________________
+ 
+  MiX99_SOLVE: Start of Iteration                Time: 17:16:18.0  13.08.2024
+  ___________________________________________________________________________
+ 
+ 
+                             Iteration Statistics
+                             --------------------
+
+                            Convergence Indicators
+ -----------------------------------------------------------------------------
+  ROUND        CA            CR            CM            CD        MAX.CHA.
+ -------  ------------  ------------  ------------  ------------  ------------
+    Solution vector will be initialized to be zero
+        rhs' * rhs =    7.40900005269350     
+ animal rhs' * rhs =    2.02800001250704     
+       ------------------------------------------------------
+       0     1.000         1.000         1.000         0.000         0.000    
+       1    0.4842        0.2575        0.2207         1.000        0.5423    
+       2    0.1754        0.9276E-01    0.7472E-01    0.1539        0.5838E-01
+       3    0.1104        0.6328E-01    0.5308E-01    0.8938E-01   -0.5209E-01
+       4    0.7422E-01    0.4172E-01    0.3741E-01    0.1179        0.5519E-01
+       5    0.8466E-01    0.4494E-01    0.3465E-01    0.6819E-01   -0.3208E-01
+       6    0.3030E-01    0.1594E-01    0.1380E-01    0.6376E-01    0.3073E-01
+       7    0.1739E-01    0.9124E-02    0.7221E-02    0.2382E-01   -0.1536E-01
+       8    0.6203E-02    0.3774E-02    0.3381E-02    0.8615E-02   -0.3366E-02
+       9    0.9535E-03    0.4991E-03    0.4089E-03    0.4604E-02    0.2759E-02
+      10    0.8934E-15    0.4735E-15    0.3843E-15    0.9120E-03   -0.4765E-03
+ 
+    Number of iterations reached the number of equations (10)!
+    Stopping criterion CD < 0.1E-4 was _NOT_ achieved in 10 iterations.
+    NOTE: CD criterion must be met by two consecutive iterations!
+ 
+  ___________________________________________________________________________
+ 
+  MiX99_SOLVE: End of Iteration                  Time: 17:16:18.0  13.08.2024
+  ___________________________________________________________________________
+ 
+ 
+     Solutions for First 20 Levels of Across-Block Fixed Effect:  1  Sex     
+     -----------------------------------------------------------------------
+     Fact.Trt _____Level_____    N-Obs     Eq-No    Solution     Factor
+        1   1Female                            2         9     3.40443     Sex
+        1   1Male                              3        10     4.35850     Sex
+ 
+ First 20 Animal Solutions                                         
+ ---------------------------------------------------------------------------
+ Fact.Trt __Animal-ID____ N-Desc  N-Obs     Eq-No    Solution     Factor
+    1   1 2                              2      0         1   -0.187701E-01 ID
+    1   1 3                              2      0         2   -0.410842E-01 ID
+    1   1 1                              2      0         3    0.984446E-01 ID
+    1   1 6                              1      1         4    0.176872     ID
+    1   1 5                              1      1         5   -0.185732     ID
+    1   1 4                              1      1         6   -0.866317E-02 ID
+    1   1 7                              0      1         7   -0.249459     ID
+    1   1 8                              0      1         8    0.182615     ID
+ 
+ 
+ 
+ ---------------------------------------------------------------------------
+ Description of Solution Files:                                    
+ ---------------------------------------------------------------------------
+ 
+   "Solfix"-File: Solutions for Across-Block Fixed Effects
+ 
+    Column  |  Description                                
+    ----------------------
+       1       Factor Number                   
+       2       Trait Number                    
+       3       Level Code                      
+       4       Number of Observations          
+       5       Solution                        
+       6       Name of Factor                  
+       7       Name of Trait                   
+ 
+ 
+   "Solani"-File: Solutions for Genetic Animal Effect     
+ 
+    Column  |  Description                                
+    ----------------------
+       1       Animal ID                       
+       2       Number of Descendants           
+       3       Number of Observations          
+       4       Solution for Trait  1  WWG        and Factor   ID
+ 
+ 
+  ___________________________________________________________________________
+ 
+  MiX99_SOLVE:     --- D O N E ---               Time: 17:16:18.1  13.08.2024
+  ___________________________________________________________________________
+ 
+         Copyright(C) 2019 Natural Resources Institute Finland (Luke)

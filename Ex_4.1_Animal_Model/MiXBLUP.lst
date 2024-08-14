@@ -1,0 +1,197 @@
+  ___________________________________________________________________________ 
+ |                                                                           |
+ |                             M   i   X   9  9                              |
+ |                            k e r n e l   f o r                            |
+ |                         M   i   X   B   L   U   P                         |
+ |                                                                           |
+ |    release    I/2022 A version 22.0228 (Apr 13 2022 14:07 git f332fd7)    |
+ |                                                                           |
+ |                         D A T A P R O C E S S O R                         |
+ |                                                                           |
+ |   Natural Resources Institute Finland (Luke)     Copyright(C) 1998-2022   |
+ |   FI-31600 Jokioinen, Finland                    All rights reserved      |
+ |   http://www.luke.fi/mix99                       mix99@luke.fi            |
+ |___________________________________________________________________________|
+ |                                                                           |
+ |   When using this program you agree with the following terms and          |
+ |   conditions. User is responsible for preparing correctly formatted       |
+ |   data for this program and is responsible for correctness of data        |
+ |   information. You are not allowed to distribute this program nor         |
+ |   modified versions of it neither under the same nor under a different    |
+ |   name. Any decisions based on information given by using this software   |
+ |   are made at your own responsibility and risk. Only limited technical    |
+ |   support can be provided. For commercial purposes, valid MiX99 software  |
+ |   contract is required. Use of MiX99 software should be credited with     |
+ |   appropriate reference:                                                  |
+ |                                                                           |
+ |   MiX99 Development Team (2022). MiX99: A software package for solving    |
+ |      large mixed model equations. Release I/2022. Natural Resources       |
+ |      Institute Finland (Luke). Jokioinen, Finland.                        |
+ |      URL: http://www.luke.fi/mix99                                        |
+ |___________________________________________________________________________|
+ 
+  ___________________________________________________________________________
+ 
+  DESCRIPTION OF ANALYSIS                        Time: 17:16:17.6  13.08.2024
+  ___________________________________________________________________________
+ |                                                                           |
+ | Chapter 3.1 Example                                                       |
+ |___________________________________________________________________________|
+ 
+ 
+ 
+ I N P U T   F I L E S
+ =============================================================================
+ 
+ DATA FILE: 
+   data.txt
+   File format               : formatted (ascii)
+   Integer input columns     :      2
+   ID       Sex     
+   Integer input column types:
+    1 1
+   Real input columns        :      1
+   WWG     
+   Code for missing real values:                            0.000000
+   Integer input values less or equal to zero are considered missing.
+ 
+ PEDIGREE FILE: 
+   pedigree.txt
+   Integer input columns read:
+   Animal  Sire  Dam
+ 
+ FILE with VARIANCE-COVARIANCE PARAMETERS: 
+   covar.txt
+ 
+ DIRECTORY WHERE WORK FILES ARE STORED: 
+   ./temp/
+ 
+ 
+ 
+ A P P L I E D   M O D E L
+ =============================================================================
+ 
+   TR-GRP, WEIGHT  | MODEL
+   ------------------------------------------------
+
+     1     -       | WWG      = (Sex) + (ID) + e
+ 
+   TR,TR-NAME  |  RANDOM FACTORS IN MODEL
+   ---------------------
+
+    1 WWG      | ID      
+      Random no:  1
+ 
+ 
+   METHOD AND INFORMATION USED TO ACCOUNT FOR RELATIONSHIP
+   -------------------------------------------------------
+   ANIMAL MODEL: Sires and Dams
+ 
+   Relationship Information for Genetic Effects (Direct/Maternal/Paternal) 
+   ---------------------------------------------------------------------------
+   Genetic Effect Factor   :    1
+   Relationship Information:    1
+   Integer-Input Variable  : ID      
+   Biological Effect       : DIRECT  
+ 
+ 
+ 
+ A P P L I E D   (C O) V A R I A N C E S
+ =============================================================================
+ 
+ 
+   Covariance Matrix for Random Effect Number   1   ID      
+   ---------------------------------------------------------
+                1
+     1      20.0000    
+  
+  
+   Residual Co-Variance Matrix
+   ---------------------------
+     1      40.0000    
+  
+  
+ 
+ 
+ A P P L I E D   (C O) V A R I A N C E S
+ =============================================================================
+ 
+ 
+   Covariance Matrix for Random Effect Number   1   ID      
+   ---------------------------------------------------------
+                1
+     1     0.500000    
+  
+  
+   Residual Co-Variance Matrix
+   ---------------------------
+     1      1.00000    
+  
+  
+ 
+ 
+ 
+ D A T A   D E S C R I P T I O N
+ =============================================================================
+ 
+ PEDIGREE:
+   Number of Pedigree Records Processed ...........         8
+   Number of Blocks in Pedigree File ..............         1
+   Number of Blocks in Pedigree and Data File .....         2
+ 
+ DEPENDENT VARIABLES:
+   TR TR-NAME       N-OBS      MEAN        SD       MINIMUM     MAXIMUM
+   --------------------------------------------------------------------
+    1  WWG                5   3.9600      0.82341       2.9000       5.0000    
+ 
+   Number of animals with data records..............           5
+   Number of Data Records Processed ................           5
+   Total Number of Observations ....................           5
+   Number of Trait Patterns ........................           1
+   Maximum Number of Trait Patterns ................           1
+ 
+    Number of residual (co)variance matrices ...         1
+ 
+ 
+ 
+ N U M B E R   O F   E F F E C T   L E V E L S
+ =============================================================================
+ 
+  
+   Number of Levels For Each Across-Blocks Fixed Effect  
+   ----------------------------------------------------  
+             Factor                             
+   Trait |      1
+   ----- |  ------
+     1   |      2
+  
+  
+    Number of Levels for Random Effects
+    -----------------------------------
+         Effect    |  
+     1   ID        |         8
+  
+  
+   Space for Trait Patterns ....................         1
+ 
+ 
+ S T R U C T U R E   O F   M M E
+ =============================================================================
+ 
+   Number of General Regression Equations ...............         0
+   Number of Across-Block Fixed Equations ...............         2
+   Number of Within-Block Fixed Equations ...............         0
+   Number of Across-Block Random Equations ..............         0
+   Number of Within-Block Random Equations ..............         0
+   Number of Animal Equations ...........................         8
+   Total Number of Equations ............................        10
+ 
+   Number of Animals in A-Inverse .......................         8
+ 
+  ___________________________________________________________________________ 
+  
+  ___________________________________________________________________________
+ 
+  MiXBLUP PRE-PROCESSING DONE                    Time: 17:16:18.0  13.08.2024
+  ___________________________________________________________________________
+  

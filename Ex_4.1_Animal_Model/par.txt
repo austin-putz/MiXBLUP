@@ -1,0 +1,5 @@
+G
+WWG(ID) 20
+
+Res
+WWG 40

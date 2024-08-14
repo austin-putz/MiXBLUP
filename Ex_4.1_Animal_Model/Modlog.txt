@@ -1,0 +1,151 @@
+           1
+           1
+           2
+           1
+           1
+           0
+          10
+8 0 10 1 2
+           1
+           1           1
+           1
+           1
+           1
+           1
+           1
+           0
+           2
+           0
+           1
+           0
+           2           0           0
+           1
+           2
+           1
+           5
+           0
+           0
+           0
+           1
+           2
+           1
+           1
+           1
+        2048
+        2048
+        2048           0
+                 10240
+           2
+           1
+           8
+1 1 1 1 2048
+ renum_sire, nretab, ani_terms
+           0           2           1
+ iscal, raef_o, raef_p, iaimet, random_phan, irestr_gr, covfile_type, iA22method
+1 0 1 2 .000000 0 0 0
+ traitType(1:nt)
+           9
+ nregt, covarbTable, GusesT
+           0 F F
+ sout
+ b
+ ngreg(1:nt)
+           0
+ nt2(1:last_random)
+           1
+ VCVmatrix(1:last_random)
+ T
+ INVcorr_matrix(1:last_random)
+ F
+ order(1:2,1:nbkef)
+           1           1
+ itr(1:mnraef)
+           1
+ nrirat(1:last_random,1:maxbk)
+           1
+ nralev(1:mnraef)
+           0
+ trpos(1:nt,1:ntrgr)
+           1
+ wgtpos(1:nt)
+           0
+ regeff(1,mxreg)
+           0           0
+ equation(1,mxreg)
+           1           1
+ term_number(1,mxreg)
+           1           2
+ bksubstr(1:nbkef)
+           1
+ spre(1:nt)
+   6.32455532033676     
+ ranout(1:last_random)
+ y
+ title
+| Chapter 3.1 Example                                                       |
+  name(1:14)
+./temp//Tmp1.code
+./temp//Tmp2.coef
+./temp//Tmp3.coef
+./temp//Tmp4.pedi
+./temp//Tmp5.clas
+./temp//Tmp6.diab
+./temp//Tmp7.prec
+./temp//Tmp8.solu
+./temp//Tmp9.strc
+./temp//Tm10.trco
+./temp//B1/Tm10.trco
+./temp//B2/Tm10.trco
+./temp//Tm11.sire
+./temp//Tm20.inbr
+code.inp
+ Direct genetic effect is alphanumeric
+ T
+ parfile
+covar.txt
+ blkSzXpX(0:NblktypXpX)
+           0           1
+ blksXpX(0:NblktypXpX)
+           0           2
+ acfixlevsz(1:nacfxef)
+           1
+ acfixnlev(1:nacfxef)
+           2
+ ifxid_a(1:nacfxef)
+           2
+ acfixtab(1:maxaclev,1:nacfxef)
+           1
+ acfixcol(1:maxaclev,1:nacfxef)
+           1
+ ACBLKfixed(1:nacfxef)
+ T
+ trstart(1:nt)
+           0
+ trstart2(1:nt)
+           1
+ trend2(1:nt)
+           2
+ NEpara(1:NE,1:nt)
+           1
+           1
+ diagXpX diag_MpM
+bn
+ diagWpW(1:nbkef), diagWpWacran
+ F T
+ w_2
+   1.00000000000000     
+           2           1
+ -       ID       Sex     
+ 0 1 1
+ -       WWG     
+ iraidDES(last_random)
+           1
+ traitDES(nt)
+           1
+           1
+ID      
+        
+        
+        2022           1           1
+          13           8        2024          17          16
+   17.6900000000000     

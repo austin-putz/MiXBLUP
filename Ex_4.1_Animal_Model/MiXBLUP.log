@@ -1,0 +1,104 @@
+  ____________________________________________________________________________ 
+ |                                                                            |
+ |   MMM       MMM    II *             X BBBBBB   LL      UU    UU PPPPPP     |
+ |   MMM       MMM    II ***         XXX BBBBBBB  LL      UU    UU PPPPPPP    |
+ |  MM MM     MM MM      *****     XXXXX BB    BB LL      UU    UU PP    PP   |
+ |  MM MM     MM MM   II   ****  XXXXX   BB    BB LL      UU    UU PP    PP   |
+ |  MM  MM   MM  MM   II     **X XXX     BBBBBBB  LL      UU    UU PPPPPPP    |
+ | MM   MM   MM   MM  II     XXX X**     BBBBBBB  LL      UU    UU PPPPPP     |
+ | MM    MM MM    MM  II   XXXXX  ****   BB    BB LL      UU    UU PP         |
+ | MM    MM MM    MM  II XXXXX     ***** BB    BB LLL     UU    UU PP         |
+ | MM     MMM     MM  II XXX         *** BBBBBBB   LLL     UU  UU  PP         |
+ | MM             MM  II X             * BBBBBB     LLLLL   UUUU   PP         |
+ |                                                                            |
+ |                                                                            |
+ |                       3.0.1.00138 2024-06-06 12:10:23                      |
+ |                                                                            |
+ |                                                                            |
+ |  by Jan ten Napel                                                          |
+ |     Jérémie Vandenplas                                                   |
+ |     Martin Lidauer                                                         |
+ |     Ismo Strandén                                                         |
+ |     Matti Taskinen                                                         |
+ |     Kaarina Matilainen                                                     |
+ |     Esa Mäntysaari                                                        |
+ |     Mario Calus                                                            |
+ |     Roel Veerkamp                                                          |
+ |                                                                            |
+ |     http://www.mixblup.eu                                                  |
+ |     Copyright. All rights reserved.                                        |
+ |                                                                            |
+ |     See General terms and conditions MiXBLUP                               |
+ |                                                                            |
+ |     When MiXBLUP is used for scientific purposes, its use should be        |
+ |     credited by citing the manual (Ten Napel et al., 2020)                 |
+ |____________________________________________________________________________|
+ |                                                                            |
+ |     Full license for MiXBLUP and hpblup solver                             |
+ |     Unlimited                                                              |
+ |     The license key is valid until (DD-MM-YYYY): 15-01-2025                |
+ |                                                                            |
+ |     Folder with MiXBLUP executables:                                       |
+ |                      /cm/shared/apps/mixblup/current//                     |
+ |____________________________________________________________________________|
+ ____________________________________________________________________________
+ MiXBLUP      --- S T A R T ---           Time:   17:16:17.270   13. 08. 2024
+ ____________________________________________________________________________
+ 
+! Input file: ctl.mix                                                                                             
+ 
+  MiXBLUP directive file: ctl.mix
+ 
+ 
+  Analysis: Chapter 3.1 Example
+ 
+! Number of lines in MiX99 hash table is:        1
+! Number of records in data_4.1.txt:        5
+! Number of records in ped_4.1.txt:        8
+
+================
+
+Making MiX file:
+
+================
+
+
+================
+
+Making PEEK file:
+
+================
+
+================
+
+Preprocessing finished
+
+================
+
+================
+
+Dataprocessor started, please wait  .......
+
+================
+
+Solver started, please wait until converged ...
+
+
+================
+
+Processing solutions and writing output
+
+================
+Solutions with original class effect labels are written to 
+Solani.out               
+! Solfix.txt rewritten to file Solfix.out
+
+================
+
+Program finished
+
+================
+! CPU time of operation was      1.2 seconds
+ ____________________________________________________________________________
+ MiXBLUP      --- D O N E ---             Time:   17:16:18.146   13. 08. 2024
+ ____________________________________________________________________________

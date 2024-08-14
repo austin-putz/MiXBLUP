@@ -1,0 +1,16 @@
+TITLE Chapter 3.1 Example
+DATAFILE data.txt !MISSING 0 !STATS NDHL
+ ID I
+ Sex I
+ WWG T
+PEDFILE pedigree.txt !CALCINBR
+ ID I
+ Sire I
+ Dam I
+PARFILE par.txt
+MODEL
+ WWG ~ Sex !RANDOM G(ID)
+SOLVING
+ !MAXIT 1000
+TMPDIR ./temp/
+END
