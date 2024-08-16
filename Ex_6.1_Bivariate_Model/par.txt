@@ -1,0 +1,7 @@
+G
+WWG(ID) 20
+PWG(ID) 18 40
+
+Res
+WWG 40
+PWG 11 30
