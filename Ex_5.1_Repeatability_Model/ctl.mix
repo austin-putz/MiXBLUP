@@ -1,0 +1,40 @@
+TITLE Example 5.1 - Repeatability Model
+
+# Data File
+DATAFILE data_5.1.txt !MISSING 0 !STATS NDHL # set missing value and data statistics
+# I = Integer, A = Alphanumeric, R = [Real] -> Covariate, T = Trait
+  ID A
+  ID2 A
+  Sire A
+  Dam A
+  Parity A
+  HYS A
+  FY T
+
+# Pedigree / Relationship Matrix
+PEDFILE ped_5.1.txt !CALCINBR  # Inbreeding calculated
+  ID A
+  Sire A
+  Dam A
+
+# Variance Components
+PARFILE par.txt
+
+# Model(s)
+MODEL 
+  FY ~ HYS Parity !RANDOM G(ID) ID2
+
+# Options
+SOLVING 
+  !MAXIT 1000
+  
+TMPDIR ./temp/
+
+
+
+
+
+
+
+
+
