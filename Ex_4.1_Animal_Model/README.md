@@ -2,9 +2,15 @@
 
 Simple animal model implemented in MiXBLUP. 
 
+Note: Here we get the same fixed effect output but this may not always be the case. 
+The **X** matrix can be parameterized in many ways. Here there is no intercept term
+so we can fit both sex effects. Example 5.1 I cannot replicate the same fixed effect
+terms as it's parameterized different in MiXBLUP by default. You can always set your
+own covariates and fit those independent as covariates. 
+
 ## Instruction File
 
-`ctl.mix` file
+`ctl.mix` file (instruction file for MiXBLUP)
 
 ```bash
 TITLE Example 4.1 - Simple Animal Model
