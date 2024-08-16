@@ -44,8 +44,6 @@ SOLVING
 
 `data_6.1.txt`
 
-**NOTE:** You must add a 2nd column with the same values (IDs here) to run repeatability. 
-
 ```bash
 4 Male 1 0 4.5 6.8
 5 Female 3 2 2.9 5.0
