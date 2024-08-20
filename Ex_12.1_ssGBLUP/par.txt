@@ -1,0 +1,5 @@
+G
+FDYD(ID) 35.241
+
+Res
+FDYD 245
