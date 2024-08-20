@@ -1,0 +1,37 @@
+TITLE Example 11.1 - GBLUP Model
+
+# Data File
+DATAFILE data_11.1.txt !MISSING 0 !STATS NDHL # set missing value and data statistics
+# I = Integer, A = Alphanumeric, R = [Real] -> Covariate, T = Trait
+  ID A
+  Sire A
+  Dam A
+  Mean R
+  EDC R
+  FDYD T
+
+# Pedigree / Relationship Matrix
+#PEDFILE ped_11.1.txt !CALCINBR  # Inbreeding calculated
+#  ID A
+#  Sire A
+#  Dam A
+
+# SNP file
+ERMFILE geno_11.1.txt !CONSTRUCT GINV
+ID A   # set column name
+!NUMPROC 1 !DENSE 2 !METHOD VanRaden !MAF 0.001 !BACKSOLVE
+# 1 core, 2nd column has string of genotypes, VanRaden = ZZ' / sum(2pq), MAF = minor allele freq
+
+# Variance Components
+PARFILE par.txt
+
+# Model(s)
+MODEL 
+  FDYD ~ !RANDOM G(ID)
+
+# Options
+SOLVING 
+  !MAXIT 1000
+  
+
+
