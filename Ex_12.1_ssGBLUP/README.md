@@ -23,7 +23,7 @@ DATAFILE data_12.1.txt !MISSING 0 !STATS NDHL # set missing value and data stati
 ERMFILE geno_12.1.txt !CONSTRUCT HINV !SINGLESTEP
 ID A   # set column name
 !NUMPROC 1 !DENSE 2 !METHOD VanRaden !MAF 0.001
-# 1 core, 2nd column has string of genotypes, VanRaden = ZZ' / sum(2pq), MAF = minor allele freq
+# 1 processor core, 2nd column has string of genotypes, VanRaden = ZZ' / sum(2pq), MAF = minor allele freq min
 
 # Pedigree / Relationship Matrix
 PEDFILE ped_12.1.txt !CALCINBR  # Inbreeding calculated
@@ -45,7 +45,7 @@ SOLVING
 
 ## Data File
 
-`data_11.1.txt`
+`data_12.1.txt`
 
 ```bash
 13 0 0 1 558 9.0
@@ -66,7 +66,7 @@ SOLVING
 
 ## Pedigree File
 
-`ped_11.1.txt`
+`ped_12.1.txt`
 
 ```bash
 1 0 0
