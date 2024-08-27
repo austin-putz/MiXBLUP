@@ -9,10 +9,10 @@ MiXBLUP is one of the only softwares in the world that can handle large-scale ge
 **General notes on MiXBLUP:**
 
 * Programmed between **Wageningen University** (Netherlands) and Finland (**LUKE**)
-* Maintained by <a href="https://www.wur.nl/en/persons/jan-ten-napel-1.htm" target="_blank">Dr. Jan ten Napel</a> and <a href="https://research.wur.nl/en/persons/jeremie-vandenplas" target="_blank">Dr. Jerermie Vandenplas</a>
+* Maintained by <a href="https://www.wur.nl/en/persons/jan-ten-napel-1.htm" target="_blank">Dr. Jan ten Napel</a> and <a href="https://research.wur.nl/en/persons/jeremie-vandenplas" target="_blank">Dr. Jeremie Vandenplas</a>
 * Allows pedigree (no genotypes), GBLUP, single-step GBLUP (**ssGBLUP**), and single-step ridge-regresssion (ssRRBLUP) based on Rohan Fernando's work
 
-The documentation is pretty lengthy and good but I thought examples may be better. 
+The documentation is pretty good and lengthy but I thought examples may help users.
 
 **Files Needed at Minimum:**
 
